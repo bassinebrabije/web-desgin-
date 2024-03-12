@@ -1,0 +1,74 @@
+@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #03050e;
+}
+#nav {
+  background-color: #03050e93;
+  border-bottom: 0.5px solid rgba(32, 38, 48, 0.863);
+  box-shadow: #3a3e4442 0px 0px 4px 0px;
+}
+
+#font {
+  font-family: "Euclid Circular A", sans-serif;
+}
+#bg-img {
+  background-image: url(bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#container {
+  background-image: url(marketing-strategy.png);
+  background-size: cover;
+  border-radius: 20px;
+}
+
+#Testimonies {
+  background-color: #03050e;
+  height: auto;
+
+  background-image: url("bg.png"); /* Replace with your image URL */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader img {
+  max-width: 30%;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .bg {
+    padding-top: 6rem;
+  }
+
+  .loader img {
+    max-width: 50%;
+  }
+}
+
+#bgforce {
+  background-image: url("Morocco_USA_Locator-1.png"); /* Replace with your image URL */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,766 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tactical Tactics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="JS/script.js"></script>
+    <link rel="icon" href="webicon.png">
+    <script src="JS/message.js"></script>
+</head>
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <div class="w-full fixed  z-50 " id="nav">
+        <div x-data="{ open: false }"
+            class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+            <div class="p-4 flex flex-row items-center justify-between">
+                <a href="#Accueil"
+                    class=" tracking-widest text-white uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">
+                    <img src="logo.png" width="80" height="80" alt=""></a>
+                <button style="color: white;" class="md:hidden rounded-lg focus:outline-none focus:shadow-outline "
+                    @click="open = !open">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                        <path x-show="!open" fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                        <path x-show="open" fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+
+                </button>
+            </div>
+
+            <nav style="cursor: pointer;" :class="{'flex': open, 'hidden': !open}"
+                class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row" id="font">
+                <a href="#Accueil"
+                    class="px-4 py-2 mt-2 text-sm   text-white rounded-lg  hover:bg-[#f12035]     md:mt-0 md:ml-4  focus:text-white   focus:outline-none focus:shadow-outline">Accueil
+                </a>
+                <a href="#apropos"
+                    class="px-4 py-2 mt-2 text-sm  text-white rounded-lg  hover:bg-[#f12035]    md:mt-0 md:ml-4  focus:text-white   focus:outline-none focus:shadow-outline">À
+                    propos de nous</a>
+                <a href="#Nosservices"
+                    class="px-4 py-2 mt-2 text-sm   rounded-lg    text-white hover:bg-[#f12035]  md:mt-0 md:ml-4  focus:text-white   focus:outline-none focus:shadow-outline">Nos
+                    services</a>
+                <a href="#Consultation"
+                    class="px-4 py-2 mt-2 text-sm  rounded-lg  text-white   hover:bg-[#f12035]  md:mt-0 md:ml-4  focus:text-white   focus:outline-none focus:shadow-outline">Consultation
+                    gratuite</a>
+                <a href="#contact"
+                    class="px-4 py-2 mt-2 text-sm  rounded-lg  text-white   hover:bg-[#f12035]  md:mt-0 md:ml-4  focus:text-white   focus:outline-none focus:shadow-outline">Contactez
+                    nous
+                </a>
+            </nav>
+
+        </div>
+    </div>
+    <section>
+
+
+        <div class="bg" id="Accueil">
+            <video src="VideoOFFICE.mp4" type="video/mp4"  autoplay muted loop>
+            </video>
+        </div>
+        <!-- hero section end -->
+
+        <!-- about section -->
+        <div id="apropos" class="w-full max-w-6xl mx-auto pt-14 sm:px-6 md:px-8 relative">
+            <div >
+                <div class="shadow rounded-xl">
+                    <div class="grid overflow-hidden text-white shadow-xl md:grid-cols-2  rounded-xl" id="bgabout">
+                        <aside class="p-8 space-y-4 md:p-16">
+                            <h2 class="text-2xl font-bold tracking-tight md:text-4xl font-headline">
+                                À propos de nous
+                            </h2>
+                            <p class=" text-gray-400 ">
+                                Basée à Casablanca, Maroc, <span class="text-[#f12035] font-bold">Tactical Tactics
+                                </span>est une
+                                extension dynamique des départements
+                                commerciaux de nos clients, spécialisée dans la concrétisation des ventes à
+                                l'international.
+                            </p>
+                            <p class=" text-gray-400 ">
+                                Notre expertise réside dans la promotion du "Made in Morocco", en transformant les
+                                opportunités en succès commerciaux tangibles sur les marchés des États-Unis, du Canada
+                                et de la Chine.
+                            </p>
+                            <p class=" text-gray-400 ">
+                                En tant qu'entreprise avec une expérience canado-marocaine, nous combinons une
+                                connaissance approfondie des nuances locales avec une perspective globale, offrant une
+                                stratégie de marché inégalée et une exécution de vente précise.
+                            </p>
+                        </aside>
+                        <aside class="relative hidden md:block">
+                            <img class="absolute inset-0 object-cover object-left-top w-full h-full mt-16 -mr-16 rounded-tl-lg"
+                                src="logowall.png" alt="">
+                        </aside>
+                    </div>
+                </div>
+                <div class="relative flex flex-col pt-5 pl-14 pr-14" >
+                    <div class="sm:text-center">
+                        <h2 class="text-2xl font-abold  text-white tracking-tight sm:text-4xl"> Nous sommes les
+                            extensions de votre chaîne de vente. <br> Qu'attendez-vous ?
+                        </h2>
+                    </div>
+                    <a
+                        class="w-auto text-2xl inline-block mt-5 mx-auto rounded-md bg-[#f12035] hover:scale-90  cursor-pointer  border-[#f12035]  border-2 px-5 py-3 text-base font-medium text-white shadow hover:border-[#f12035] hover:bg-transparent  focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500 sm:px-10">
+                        Réservez dès maintenant une consultation gratuite ! →
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- about section END -->
+
+        <div class="section relative pt-20 py-14 md:pt-16 md:pb-0 " >
+            <div class="container xl:max-w-6xl mx-auto px-4">
+                <!-- Heading start -->
+                <header class="text-center mx-auto mb-12 lg:px-20">
+                    <h2 class="text-5xl leading-normal mb-2 font-bold text-white">Nos valeurs
+                    </h2>
+                    <p class="text-gray-400">Chez Tactical Tactics, nous croyons en des valeurs clés pour réussir sur le
+                        marché international, et nous savons que les industries marocaines partagent cette vision.
+                    </p>
+                </header>
+                <!-- End heading -->
+                <!-- row -->
+                <div class="container  mx-auto">
+                    <div class="flex flex-wrap -m-4 text-center ">
+                        <div class="p-4 md:w-1/3 sm:w-1/2 w-full" >
+                            <div
+                                class="border-2 border-gray-600 cursor-pointer px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110 hover:border-[#f12035] hover:border-opacity-25">
+                                <div class="flex justify-center items-center">
+                                    <!-- Added flex and justify-center items-center here -->
+                                    <img src="Engagement.png" width="60rem" alt="">
+                                </div>
+                                <br>
+                                <h2 class="title-font font-medium  text-white">Engagement</h2>
+                                <p class="leading-relaxed text-gray-500">Notre engagement envers nos clients est
+                                    inébranlable. Nous sommes dévoués à leur succès et nous les soutenons de manière
+                                    personnalisée à chaque étape de leur parcours. Que ce soit en fournissant des
+                                    solutions adaptées à leurs besoins spécifiques, en répondant rapidement à leurs
+                                    préoccupations ou en les accompagnant dans la réalisation de leurs objectifs, nous
+                                    sommes là pour eux, prêts à les aider à réussir.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-4 md:w-1/3 sm:w-1/2 w-full" >
+                            <div
+                                class="border-2 border-gray-600 cursor-pointer px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110 hover:border-[#f12035] hover:border-opacity-40">
+                                <div class="flex justify-center items-center">
+                                    <!-- Added flex and justify-center items-center here -->
+                                    <img src="intégrité.png" width="60rem" alt="">
+                                </div> <br>
+                                <h2 class="title-font font-medium  text-white">Transparence et intégrité</h2>
+                                <p class="leading-relaxed text-gray-500"> Chez nous, la transparence et l'intégrité sont
+                                    au cœur de tout ce que nous faisons. Nous nous engageons à agir avec honnêteté et
+                                    éthique dans chacune de nos interactions, garantissant ainsi la confiance et la
+                                    crédibilité de nos relations avec nos clients et partenaires.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-4 md:w-1/3 sm:w-1/2 w-full" >
+
+                            <div
+                                class="border-2 border-gray-600 cursor-pointer px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110 hover:border-[#f12035] hover:border-opacity-25">
+                                <div class="flex justify-center items-center">
+                                    <!-- Added flex and justify-center items-center here -->
+                                    <img src="Responsabilité.png" width="60rem" alt="">
+                                </div> <br>
+                                <h2 class="title-font font-medium  text-white">Responsabilité sociale</h2>
+                                <p class="leading-relaxed text-gray-500">Nous considérons la responsabilité sociale
+                                    comme une priorité essentielle. Nous nous engageons à adopter des pratiques durables
+                                    qui préservent l'environnement et contribuent au bien-être de la société. En tant
+                                    qu'entreprise citoyenne, nous cherchons à avoir un impact positif sur notre
+                                    communauté et à faire progresser les causes sociales et environnementales.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+        </div>
+
+        <section class="pt-14" >
+            <div class="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 relative">
+                <div class="shadow rounded-xl">
+                    <div class="grid overflow-hidden text-white shadow-xl md:grid-cols-2 bg-[#f12035] rounded-xl">
+                        <aside class="p-8 space-y-4 md:p-10">
+                            <p class="font-semibold">
+                                ÊTES-VOUS UN PRODUCTEUR MAROCAIN VISANT À METTRE EN VALEUR LE "MADE IN MOROCCO" SUR LA
+                                SCÈNE INTERNATIONALE ?
+                            </p>
+                            <p class="font-semibold">
+                                ÊTES-VOUS À LA RECHERCHE D'OCCASIONS POUR ÉTENDRE VOTRE INDUSTRIE AUX ÉTATS-UNIS, ET AU
+                                CANADA ?
+                            </p>
+                        </aside>
+
+                        <aside class="relative ">
+                            <img class="absolute inset-0 hidden md:block object-cover object-left-top w-full h-full mt-16 -mr-16 rounded-tl-lg"
+                                src="pngwing.com.png" alt="Discover our beautiful panel">
+                            <div class="pl-8 pb-8 md:pl-20 ">
+                                <a
+                                    class="w-auto text-2xl inline-block mt-5 mx-auto rounded-md bg-white    cursor-pointer    px-5 py-3 text-base font-medium text-black shadow   focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500 sm:px-10">
+                                    N’attendez plus rien contactez nous
+                                </a>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <div id="Nosservices" class="section relative pt-20 pb-8 md:pt-16 md:pb-0 ">
+            <div class="container xl:max-w-6xl mx-auto px-4">
+                <!-- Heading start -->
+                <header class="text-center mx-auto mb-12 lg:px-20" >
+                    <h2 class="text-5xl leading-normal mb-2 font-bold text-white">Nos services
+                    </h2>
+                    <p class="max-w-4xl mx-auto mt-8 text-base leading-relaxed text-gray-500">Nous sommes des experts
+                        dans la conclusion des affaires entre le marché marocain et le marché américain. Nous nous
+                        positionnons comme une extension de votre équipe de vente et de marketing, représentant votre
+                        industrie sur le marché international</p>
+                    <P class="text-gray-500 pt-14
+                    "> Nous proposons une suite intégrée de services, y compris:
+                    </P>
+                </header>
+
+                <div class="container  mx-auto">
+                    <div class="flex flex-wrap -m-4 text-center">
+                        <div class="p-4 md:w-1/3 sm:w-1/2 w-full" >
+                            <div
+                                class="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110 hover:border-[#f12035]  hover:border-opacity-40 cursor-pointer">
+                                <div class="flex justify-center items-center">
+                                    <!-- Added flex and justify-center items-center here -->
+                                    <img src="STRATÉGIE.png" width="70rem" alt="">
+                                </div> <br>
+                                <h2 class="title-font font-medium  text-white">STRATÉGIE DE PÉNÉTRATION DE MARCHÉ</h2>
+                                <p class="leading-relaxed text-gray-500">Nous élaborons des stratégies personnalisées
+                                    pour maximiser les opportunités de vente à l'international, assurant une entrée
+                                    réussie sur de nouveaux marchés.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-4 md:w-1/3 sm:w-1/2 w-full" >
+
+                            <div
+                                class="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110 hover:border-[#f12035]  hover:border-opacity-40 cursor-pointer">
+                                <div class="flex justify-center items-center">
+                                    <!-- Added flex and justify-center items-center here -->
+                                    <img src="OPTIMISATION.png" width="70rem" alt="">
+                                </div> <br>
+                                <h2 class="title-font font-medium  text-white">OPTIMISATION COMMERCIALE ET MISE À NIVEAU
+                                </h2>
+                                <p class="leading-relaxed text-gray-500">Optimisation Commerciale et Mise à Niveau :
+                                    Au-delà de l'alignement des opérations de vente avec les standards et attentes des
+                                    marchés cibles, nous prenons en charge la mise à niveau de votre entreprise pour se
+                                    préparer à l'entrée sur le marché. Cela inclut l'ajustement de vos processus,
+                                    produits, et stratégies marketing pour garantir une compétitivité optimale.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-4 md:w-1/3 sm:w-1/2 w-full" >
+                            <div
+                                class="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110 hover:border-[#f12035]  hover:border-opacity-40 cursor-pointer">
+                                <div class="flex justify-center items-center">
+                                    <!-- Added flex and justify-center items-center here -->
+                                    <img src="GESTION.png" width="70rem" alt="">
+                                </div> <br>
+                                <h2 class="title-font font-medium  text-white">GESTION DES RELATIONS COMMERCIALES</h2>
+                                <p class="leading-relaxed text-gray-500">Nous établissons et entretenons des relations
+                                    solides avec les distributeurs, les acheteurs, et les partenaires stratégiques à
+                                    l'étranger, facilitant des échanges commerciaux fructueux.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="pt-14" >
+            <div class="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 relative">
+
+                <div class="shadow rounded-xl">
+
+                    <div class="grid overflow-hidden text-white shadow-xl md:grid-cols-2 bg-[#f12035] rounded-xl ">
+
+                        <aside class="p-8 space-y-4 md:p-16">
+                            <h2 class="text-2xl font-bold tracking-tight md:text-4xl font-headline">
+                                Notre Force
+                            </h2>
+
+                            <p class="font-semibold">
+                                Développement des affaires : Nous sommes vos maestros des ventes et du commercialisation
+                                sur le terrain international, rayonnant à travers toute l'Amérique de l'est, à Chicago,
+                                Los Angeles, New York comme à Montréal et Vancouver.
+                            </p>
+                            <p class="font-bold text-2xl">Transformons le Made In Morocco en une success story
+                                international</p>
+                        </aside>
+
+                        <aside class="relative hidden md:block">
+                            <img class="absolute inset-0 object-cover object-left-top w-full h-full mt-16 -mr-16 rounded-tl-lg"
+                                src="pngwing.com.png" alt="Discover our beautiful panel">
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        </div>
+
+
+        <div class="max-w-6xl py-12 mx-8 md:mx-10 lg:mx-20 xl:mx-auto" id="Testimonies">
+            <div
+                class="transition duration-500 ease-in-out transform scale-100 translate-x-0 translate-y-0 opacity-100">
+                <div class="mb-12 space-y-5 md:mb-16 md:text-center" >
+                    <div
+                        class="inline-block px-3 py-1 text-sm font-semibold text-indigo-100 rounded-lg md:text-center text-cn bg-[#f12035] hover:cursor-pointer ">
+                        Tactical Tactics
+                    </div>
+                    <h1 class="mb-5  font-semibold text-white md:text-center md:text-5xl">
+                        Témoignages
+                    </h1>
+                </div>
+            </div>
+
+
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+                <ul class="space-y-8">
+                    <li class="text-sm leading-6" >
+                        <div class="relative group">
+
+                            <div style="border: 0.5px  solid rgba(255, 255, 255, 0.158);"
+                                class="relative p-6 space-y-6 leading-none rounded-lg  ring-1 ring-gray-600 text-white/5">
+                                <div class="flex items-center space-x-4"><img
+                                        src="https://pbs.twimg.com/profile_images/1276461929934942210/cqNhNk6v_400x400.jpg"
+                                        class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Kanye West">
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-white">Kanye West</h3>
+                                        <p class="text-gray-500 text-md">Rapper &amp; Entrepreneur</p>
+                                    </div>
+                                </div>
+                                <p class="leading-normal text-gray-300 text-md">Find God.</p>
+                            </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6" >
+                        <div class="relative group">
+
+                            <div style="border: 0.5px  solid rgba(255, 255, 255, 0.158);"
+                                class="relative p-6 space-y-6 leading-none rounded-lg  ring-1 ring-gray-600 text-white/5">
+                                <div class="flex items-center space-x-4"><img
+                                        src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg"
+                                        class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook">
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-white">Tim Cook</h3>
+                                        <p class="text-gray-500 text-md">CEO of Apple</p>
+                                    </div>
+                                </div>
+                                <p class="leading-normal text-gray-300 text-md">Diam quis enim lobortis
+                                    scelerisque
+                                    fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec
+                                    sagittis
+                                    aliquam malesuada bibendum.</p>
+                            </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6" >
+                        <div class="relative group">
+
+                            <div style="border: 0.5px  solid rgba(255, 255, 255, 0.158);"
+                                class="relative p-6 space-y-6 leading-none rounded-lg  ring-1 ring-gray-600 text-white/5">
+                                <div class="flex items-center space-x-4"><img
+                                        src="https://pbs.twimg.com/profile_images/1276461929934942210/cqNhNk6v_400x400.jpg"
+                                        class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Kanye West">
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-white">Kanye West</h3>
+                                        <p class="text-gray-500 text-md">Rapper &amp; Entrepreneur</p>
+                                    </div>
+                                </div>
+                                <p class="leading-normal text-gray-300 text-md">Find God.</p>
+                            </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6" >
+                        <div class="relative group">
+
+                            <div style="border: 0.5px  solid rgba(255, 255, 255, 0.158);"
+                                class="relative p-6 space-y-6 leading-none rounded-lg  ring-1 ring-gray-600 text-white/5">
+                                <div class="flex items-center space-x-4"><img
+                                        src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg"
+                                        class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook">
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-white">Tim Cook</h3>
+                                        <p class="text-gray-500 text-md">CEO of Apple</p>
+                                    </div>
+                                </div>
+                                <p class="leading-normal text-gray-300 text-md">Diam quis enim lobortis
+                                    scelerisque
+                                    fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec
+                                    sagittis
+                                    aliquam malesuada bibendum.</p>
+                            </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+
+                <ul class="hidden space-y-8 sm:block">
+                    <li class="text-sm leading-6" >
+                        <div class="relative group">
+
+                            <div style="border: 0.5px  solid rgba(255, 255, 255, 0.158);"
+                                class="relative p-6 space-y-6 leading-none rounded-lg  ring-1 ring-gray-600 text-white/5">
+                                <div class="flex items-center space-x-4"><img
+                                        src="https://pbs.twimg.com/profile_images/1375285353146327052/y6jeByyD_400x400.jpg"
+                                        class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Parag Agrawal">
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-white">Parag Agrawal</h3>
+                                        <p class="text-gray-500 text-md">CEO of Twitter</p>
+                                    </div>
+                                </div>
+                                <p class="leading-normal text-gray-300 text-md">Enim neque volutpat ac tincidunt
+                                    vitae
+                                    semper. Mattis aliquam faucibus purus in massa tempor. Neque vitae tempus
+                                    quam
+                                    pellentesque nec. Turpis cursus in hac habitasse platea dictumst.</p>
+                            </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6" >
+                        <div class="relative group">
+
+                            <div style="border: 0.5px  solid rgba(255, 255, 255, 0.158);"
+                                class="relative p-6 space-y-6 leading-none rounded-lg  ring-1 ring-gray-600 text-white/5">
+                                <div class="flex items-center space-x-4"><img
+                                        src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg"
+                                        class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook">
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-white">Tim Cook</h3>
+                                        <p class="text-gray-500 text-md">CEO of Apple</p>
+                                    </div>
+                                </div>
+                                <p class="leading-normal text-gray-300 text-md">Diam quis enim lobortis
+                                    scelerisque
+                                    fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec
+                                    sagittis
+                                    aliquam malesuada bibendum.</p>
+                            </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6" >
+                        <div class="relative group">
+
+                            <div style="border: 0.5px  solid rgba(255, 255, 255, 0.158);"
+                                class="relative p-6 space-y-6 leading-none rounded-lg  ring-1 ring-gray-600 text-white/5">
+                                <div class="flex items-center space-x-4"><img
+                                        src="https://pbs.twimg.com/profile_images/1375285353146327052/y6jeByyD_400x400.jpg"
+                                        class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Parag Agrawal">
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-white">Parag Agrawal</h3>
+                                        <p class="text-gray-500 text-md">CEO of Twitter</p>
+                                    </div>
+                                </div>
+                                <p class="leading-normal text-gray-300 text-md">Enim neque volutpat ac tincidunt
+                                    vitae
+                                    semper. Mattis aliquam faucibus purus in massa tempor. Neque vitae tempus
+                                    quam
+                                    pellentesque nec. Turpis cursus in hac habitasse platea dictumst.</p>
+                            </div>
+                            </a>
+                        </div>
+                    </li>
+
+                </ul>
+
+
+                <ul class="hidden space-y-8 lg:block">
+                    <li class="text-sm leading-6" >
+                        <div class="relative group">
+
+                            <div
+                                class="relative p-6 space-y-6 leading-none rounded-lg  ring-1 ring-gray-600 text-white/5">
+                                <div class="flex items-center space-x-4"><img
+                                        src="https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_400x400.jpg"
+                                        class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Satya Nadella">
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-white">Satya Nadella</h3>
+                                        <p class="text-gray-500 text-md">CEO of Microsoft</p>
+                                    </div>
+                                </div>
+                                <p class="leading-normal text-gray-300 text-md">Tortor dignissim convallis
+                                    aenean et
+                                    tortor at. At ultrices mi tempus imperdiet nulla malesuada. Id cursus metus
+                                    aliquam
+                                    eleifend mi. Quis ipsum suspendisse ultrices gravida dictum fusce ut.</p>
+                            </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6" >
+                        <div class="relative group">
+
+                            <div style="border: 0.5px  solid rgba(255, 255, 255, 0.158);"
+                                class="relative p-6 space-y-6 leading-none rounded-lg  ring-1 ring-gray-600 text-white/5">
+                                <div class="flex items-center space-x-4"><img
+                                        src="https://pbs.twimg.com/profile_images/516916920482672641/3jCeLgFb_400x400.jpeg"
+                                        class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Dan Schulman">
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-white">Dan Schulman</h3>
+                                        <p class="text-gray-500 text-md">CEO of PayPal</p>
+                                    </div>
+                                </div>
+                                <p class="leading-normal text-gray-300 text-md">Quam pellentesque nec nam
+                                    aliquam
+                                    sem
+                                    et tortor consequat id. Enim sit amet venenatis urna cursus.</p>
+                            </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6" >
+                        <div class="relative group">
+
+                            <div style="border: 0.5px  solid rgba(255, 255, 255, 0.158);"
+                                class="relative p-6 space-y-6 bg- leading-none rounded-lg  ring-1 ring-gray-600 text-white/5">
+                                <div class="flex items-center space-x-4"><img
+                                        src="https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_400x400.jpg"
+                                        class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Satya Nadella">
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-white">Satya Nadella</h3>
+                                        <p class="text-gray-500 text-md">CEO of Microsoft</p>
+                                    </div>
+                                </div>
+                                <p class="leading-normal text-gray-300 text-md">Tortor dignissim convallis
+                                    aenean et
+                                    tortor at. At ultrices mi tempus imperdiet nulla malesuada. Id cursus metus
+                                    aliquam
+                                    eleifend mi. Quis ipsum suspendisse ultrices gravida dictum fusce ut.</p>
+                            </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+
+
+
+
+        <div id="Consultation" class="mx-auto max-w-7xl  sm:px-6 lg:px-8 pt-20 pb-16 text-center lg:pt-32">
+
+            <h1 class="mx-auto max-w-4xl font-display text-3xl font-medium tracking-tight text-slate-900 sm:text-7xl">
+                <span class="inline-block text-white">Réservez dès maintenant votre
+                    <span class="relative whitespace-nowrap text-blue-600">
+                        <svg aria-hidden="true" viewBox="0 0 418 42"
+                            class="absolute top-2/3 left-0 h-[0.58em] w-full fill-[#f12035] "
+                            preserveAspectRatio="none">
+                            <path
+                                d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z">
+                            </path>
+                        </svg>
+                        <span class="relative text-white">Consultation Gratuite</span></span>
+                </span>
+
+            </h1>
+
+            <p class="mx-auto mt-9 max-w-2xl text-lg tracking-tight text-slate-700 sm:mt-6">
+                <span class="inline-block text-white">Chez Tactical Tactics, nous accordons la plus haute priorité à la
+                    qualité de
+                    nos services et nous nous soucions
+                    profondément de notre communauté, de nos partenaires et de nos clients. Nous nous engageons en
+                    faveur de pratiques
+                    éthiques et durables, visant un avenir meilleur pour tous.</span>
+
+            </p>
+
+
+        </div>
+
+
+
+
+        <div id="messageContainer" class="fixed z-50 bottom-8 left-7 mb-4 mr-4 " style="display: none;">
+            <div class=" rounded-lg shadow-lg p-4 bg-[#f12035]">
+                <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center">
+                        <img src="logo.png" class="w-12 mr-8 rounded-full">
+                    </div>
+                    <button class="text-white hover:text-white focus:outline-none" onclick="hideMessage()">
+                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <p class="text-white text-base">
+                    Vous souhaitez en savoir plus sur le processus ? <a
+                        href="mailto:tacticaltactics.communication@gmail.com "
+                        style="text-decoration: underline;">Contactez-nous !</a>
+                </p>
+            </div>
+        </div>
+
+        <section id="contact" class="text-gray-600 body-font relative" >
+            <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+                <div
+                    class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                    <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map"
+                        marginheight="0" marginwidth="0" scrolling="no"
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1640.8008871976804!2d-7.625451015596857!3d33.57944724857299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDM0JzQ1LjkiTiA3wrAzNycyNi45Ilc!5e0!3m2!1sen!2sma!4v1710201302474!5m2!1sen!2sma"
+                        style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+                </div>
+                <div class="lg:w-1/3 md:w-1/2  flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+                    <h2 class="text-white text-lg mb-1 font-medium title-font">Envoyez-nous un message.
+                    </h2>
+                    </p>
+                    <div class="relative mb-4">
+                        <label for="name" class="leading-7 text-sm text-white ">Voter Nom</label>
+                        <input type="text" id="name" name="name"
+                            class="w-full bg-white rounded border border-gray-300 focus:border-[#f12035] focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                    <div class="relative mb-4">
+                        <label for="email" class="leading-7 text-sm text-white ">Email</label>
+                        <input type="email" id="email" name="email"
+                            class="w-full bg-white rounded border border-gray-300 focus:border-[#f12035] focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                    <div class="relative mb-4">
+                        <label for="message" class="leading-7 text-sm text-white ">Message</label>
+                        <textarea id="message" name="message"
+                            class="w-full bg-white rounded border border-gray-300 focus:border-[#f12035] focus:ring-2 focus:ring-red-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                    </div>
+                    <button
+                        class="text-white bg-[#f12035] border-0 py-2 px-6 hover:scale-90 focus:outline-none  rounded text-lg">Envoyer
+                        Le message</button>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="footer" id="Testimonies">
+            <div class="container px-6 py-12 mx-auto">
+                <!-- <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
+                <div class="sm:col-span-2">
+                    <h1 class="max-w-lg text-white text-xl font-semibold tracking-tight text-white xl:text-2xl ">
+                        NEWSLETTER</h1>
+
+                    <div class="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
+                        <input id="email" type="text"
+                            class="px-4 py-2 text-gray-700    hite border rounded-md  dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300"
+                            placeholder="Email Address">
+
+                        <button
+                            class="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-[#fdd050] rounded-lg hover:scale-90 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
+                            Goo
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="font-semibold text-white"> Quick
+                        Link</p>
+
+                    <div class="flex flex-col items-start mt-5 space-y-2">
+                        <a
+                            class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Accueil</a>
+                        <a
+                            class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Agence</a>
+                        <a
+                            class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">L'equipe</a>
+                        <a
+                            class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Contact</a>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="font-semibold text-white " id="link">Social media</p>
+
+                    <div class="flex flex-col items-start mt-5 space-y-4">
+                        <a href=""><i class="bi bi-facebook" style="color: white;"></i></a>
+                        <a href=""> <i class="bi bi-instagram" style="color: white;"></i></a>
+                        <a href=""><i class="bi bi-twitter" style="color: white;"></i></a>
+                        <a href="mailto:contact@tacticaltactics.ma"> <i class="bi bi-envelope-fill"
+                                style="color: white;"> </i></a>
+
+
+                    </div>
+                </div>
+            </div> -->
+
+                <hr class="my-6 border-gray-200 md:my-8 dark:border-gray-700">
+
+                <div class="flex items-center">
+
+                    <div class="flex -mx-2">
+
+                        <a class="text-white transition-colors duration-300 ">©
+                            Tactical Tactics - Tous droits Réservés</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="fixed bottom-4 right-4 z-50  sm:bottom-8 sm:right-4">
+            <a href="https://wa.me/+212665424303" target="_blank" rel="noopener noreferrer"
+                class="flex items-center justify-center bg-green-500 text-white rounded-full p-4 shadow-md hover:bg-green-600 focus:outline-none focus:shadow-outline-green active:bg-green-800">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-whatsapp" viewBox="0 0 16 16" id="IconChangeColor">
+                    <path
+                        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                        id="mainIconPathAttribute" fill="#ffffff"></path>
+                </svg>
+            </a>
+        </div>
+
+
+        <div class="loader">
+            <img src="lodingg.gif" alt="">
+        </div>
+
+        
+        <script>
+            AOS.init();
+        </script>
+
+        <script>
+           document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start', // Adding this line will make the scrolling slower
+        });
+    });
+});
+
+        </script>
+</body>
+
+</html>
